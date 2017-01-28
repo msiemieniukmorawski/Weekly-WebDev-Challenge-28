@@ -1,6 +1,7 @@
 
 body{
-    background-color: white;
+    background-color: #f4f2f2;
+    overflow-x: hidden;
 }
 .red{
     color: $red-color;
@@ -120,6 +121,32 @@ nav{
 section{
     min-height: 100vh;
     
+}
+.section::before{
+    margin-top: 5%;
+    left:15px;
+    font-family: Frank Ruhl Libre,sans-serif;
+    color: #fff;
+    font-weight: 900;
+    position: absolute;
+}
+.first-section::before{
+    content: "SERVICES";
+}
+.second-section::before{
+    content: "ALBUMS";
+}
+.third-section::before{
+    content: "THOUGHTS";
+}
+.fourth-section::before{
+    content: "ABOUT";
+}
+.fifth-section::before{
+    content: "CONTACT";
+}
+.sixth-section::before{
+    content: "MY SHOP";
 }
   
 

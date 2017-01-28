@@ -1,16 +1,6 @@
-$(document).ready(function() {
-    var verticalOffset= $(window).height() - $(".navbar").outerHeight() - $("footer").outerHeight();
-    $('#vertical').flexVerticalCenter('verticalOffset');
-
-    $(window)
-        .on("load", function() {
-            var verticalOffset= $(window).height() - $("nav.navbar").outerHeight() - $("footer.nav").outerHeight();
-            $('#vertical').flexVerticalCenter('verticalOffset');
-            $(window);
-        })
-        .on("resize", function() {
-            var verticalOffset= $(window).height() - $("nav.navbar").outerHeight() - $("footer.nav").outerHeight();
-            $('#vertical').flexVerticalCenter('verticalOffset');
-            $(window);
-        });
-  });
+jQuery(".first-section").fitText(.47);
+jQuery(".second-section").fitText(.43);
+jQuery(".third-section").fitText(.59);
+jQuery(".fourth-section").fitText(.37);
+jQuery(".fifth-section").fitText(.50);
+jQuery(".sixth-section").fitText(.47);
