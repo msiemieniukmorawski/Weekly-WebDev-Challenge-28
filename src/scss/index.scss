@@ -120,12 +120,12 @@ nav{
 
 section{
     min-height: 100vh;
-    
+    position: absolute;
 }
 .section::before{
-    margin-top: 5%;
+    margin-top:5rem;
     left:15px;
-    font-family: Frank Ruhl Libre,sans-serif;
+    font-family: $font-Frank;
     color: #fff;
     font-weight: 900;
     position: absolute;
@@ -148,7 +148,69 @@ section{
 .sixth-section::before{
     content: "MY SHOP";
 }
-  
 
+.first-section-row:first-child{
+    padding-top:7rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items:center;
+}
+.first-section-row{
+    padding-top:5rem;
+     h2{
+        font-family: $font-Josefin;
+        font-weight: 700;
+        color: $red-color;
+    }
+    p{
+        font-family: $font-Frank;
+        font-weight: 300;
+        font-size: 4vw;
+        line-height: 5vw;
+        margin: 0;
+        text-align: center;
+    }
+    figcaption{
+        text-align: center;
+        margin-top: -4rem;
+        font-family: $font-Josefin;
+        font-weight: 700;
+        font-size: 2rem;
+        color: white;
+        opacity: 1;
+//        transition: .5s ease-in-out;
+    }
+    img{
+        transition: .5s ease-in-out;
+    }
+    a{
+        position: relative;
+        display: inline-block;
+        padding-bottom: 8px;
+        transition: .5s ease-in-out;
+        
+    }
+    a:hover,a:focus{
+        text-decoration: none;
+    }
+//    a:hover+ figcaption,a:focus+ figcaption{
+//        opacity: 1;
+//    }
+    
+    a:before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        transition: .5s ease-in-out;
+        display: block;
+        position: absolute;
+    } 
+    a:hover:before{
+        content: "";
+        background: rgba(245, 152, 157,.5);
+        
+    } 
+}
 
 
