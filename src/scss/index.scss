@@ -1,6 +1,6 @@
 
 body{
-    background-color: #f4f2f2;
+    background-color: #fbfbfb;
     overflow-x: hidden;
 }
 .red{
@@ -273,3 +273,67 @@ h2{
         opacity: 1;
     }
 }
+
+//                                    third section
+.third-section-row{
+    margin-top: 5vw;
+}
+.third-section-first-row{
+    text-align: center;
+    display: block;
+    
+}
+.third-section-second-row{
+    margin-top: 3vw;
+    position: relative;
+    h3{
+        font-family: $font-Frank;
+        font-weight: 300;
+        color: black;
+        font-size: 1.6rem;
+    }
+    
+    time{
+        font-family: $font-Josefin;
+        font-weight: 700;
+        color: $red-color;
+        margin-bottom: 1rem;
+        display: block;
+        text-transform:uppercase; 
+    }
+    p{
+        font-family: $font-Josefin;
+        color: #666666;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: left;
+        font-size:1.2rem;
+        line-height: 1.6rem;
+    }
+    .third-section-carousel{
+        flex-wrap: wrap;
+    }
+    .carousel-inner-center{
+        margin: auto;
+    }
+    .carousel-item-color{
+        background-color: #f2f2f2;
+        padding: 50px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
