@@ -6,7 +6,7 @@ body{
 .red{
     color: $red-color;
 }
-.container-fluid{
+.back{
         padding-bottom: 2rem;
         background-color: $primary-color;
 }
@@ -115,21 +115,9 @@ nav{
 }
 .carousel-control-next-icon{
     background-image:url("../img/arrow.png");
-    transform: rotate(180deg)
+    transform: rotate(180deg);
 }
 
-section{
-    min-height: 100vh;
-    position: absolute;
-}
-.section::before{
-    margin-top:5rem;
-    left:15px;
-    font-family: $font-Frank;
-    color: #fff;
-    font-weight: 900;
-    position: absolute;
-}
 .first-section::before{
     content: "SERVICES";
 }
@@ -148,6 +136,29 @@ section{
 .sixth-section::before{
     content: "MY SHOP";
 }
+h2{
+        font-family: $font-Josefin;
+        font-weight: 700;
+        color: $red-color;
+    }
+    p{
+        font-family: $font-Frank;
+        font-weight: 300;
+    font-size: 50px;
+    line-height: 80px;
+        margin: 0;
+        text-align: center;
+    }
+
+//                                      first section
+.section::before{
+    margin-top:6rem;
+    left:15px;
+    font-family: $font-Frank;
+    color: #fff;
+    font-weight: 900;
+    position: absolute;
+}
 
 .first-section-row:first-child{
     padding-top:7rem;
@@ -158,59 +169,107 @@ section{
 }
 .first-section-row{
     padding-top:5rem;
-     h2{
-        font-family: $font-Josefin;
-        font-weight: 700;
-        color: $red-color;
-    }
-    p{
-        font-family: $font-Frank;
-        font-weight: 300;
-        font-size: 4vw;
-        line-height: 5vw;
-        margin: 0;
-        text-align: center;
-    }
-    figcaption{
-        text-align: center;
-        margin-top: -4rem;
-        font-family: $font-Josefin;
-        font-weight: 700;
-        font-size: 2rem;
-        color: white;
-        opacity: 1;
-//        transition: .5s ease-in-out;
-    }
+     
+    
+    
     img{
         transition: .5s ease-in-out;
     }
     a{
         position: relative;
-        display: inline-block;
-        padding-bottom: 8px;
+        display: block;
+        text-align: center;
         transition: .5s ease-in-out;
         
     }
     a:hover,a:focus{
         text-decoration: none;
     }
-//    a:hover+ figcaption,a:focus+ figcaption{
-//        opacity: 1;
-//    }
-    
-    a:before{
-        content: "";
-        width: 100%;
-        height: 100%;
+
+    .hover-img-effect{
         transition: .5s ease-in-out;
-        display: block;
+        height: 100%;
         position: absolute;
-    } 
-    a:hover:before{
-        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+    }
+    
+    .hover-img-effect:hover, {
         background: rgba(245, 152, 157,.5);
-        
-    } 
+    }
+    .figure-img{
+        margin-bottom: 0;
+    }
+    figcaption{
+        margin-top: -4rem;
+        font-family: $font-Josefin;
+        font-weight: 700;
+        font-size: 2rem;
+        color: white;
+        width: 100%;
+        position: absolute;
+        z-index: 20;
+
+    }
+    figcaption:hover+.hover-img-effect{
+         background: rgba(245, 152, 157,.5);
+    }
 }
-
-
+//                                          second section
+    
+.second-section:before{
+    margin-top: 0;
+}
+.second-section-row{
+    margin-top: 5vw;
+    .txt-center{
+        display: flex;
+        align-items:center;
+    }
+    .second-section-txt{
+        text-align: center;
+        p{
+            text-align: center;
+        }
+    }
+    .second-section-photo{
+        background-image: url("../img/albums.jpg");
+        background-size: cover;
+        height: 720px;
+        position: relative;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        .hover-img-right-effect{
+            position: absolute;
+            width: 240px;
+            height: 239px;
+            background: rgba(245, 152, 157,.5);
+            opacity: 0;
+            transition: .5s ease-in-out;
+        }
+        .hover-img-right-effect:after{
+            content: "";
+            display: flex;
+            background-image: url("../img/arrow.png");
+            transform: rotate(180deg);
+            height: 100%;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 1;
+        }
+        .hover-img-right-effect:hover{
+            opacity: 1;
+        }
+    }
+    .second-section-photo:hover>.hover-img-right-effect{
+        opacity: 1;
+    }
+    .txt-center:hover+.second-section-photo>.hover-img-right-effect{
+        opacity: 1;
+    }
+}
