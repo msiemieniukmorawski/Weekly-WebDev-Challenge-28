@@ -144,8 +144,8 @@ h2{
     p{
         font-family: $font-Frank;
         font-weight: 300;
-    font-size: 50px;
-    line-height: 80px;
+        font-size: 2.8rem;
+        line-height: 4rem;
         margin: 0;
         text-align: center;
     }
@@ -219,16 +219,17 @@ h2{
     }
 }
 //                                          second section
-    
+ .txt-center{
+        display: flex;
+        align-items:center;
+     flex-wrap: wrap;
+    }   
 .second-section:before{
     margin-top: 0;
 }
 .second-section-row{
     margin-top: 5vw;
-    .txt-center{
-        display: flex;
-        align-items:center;
-    }
+    
     .second-section-txt{
         text-align: center;
         p{
@@ -318,14 +319,65 @@ h2{
     }
     .carousel-item-color{
         background-color: #f2f2f2;
-        padding: 50px;
+        padding: 15px;
+        margin: 10px 0;
     }
     
 }
+//                                    fourth section
+.fourth-section:before{
+    margin-top: 0px;
+}
+.fourth-section-row{
+    margin-top: 5vw;
+    p{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    .txt-center{
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .fourth-section-photo{
+        background-image: url(../img/albums.jpg);
+        background-size: cover;
+        height: 720px;
+        position: relative;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+}
 
-
-
-
+//                                    fifth section
+.fifth-section::before{
+    margin-top: 0;
+}
+.fifth-section-row{
+    margin-top: 5vw;
+}
+.fifth-section-carousel{
+    flex-wrap: wrap;
+    .cart{
+        position: relative;
+        height: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background-color: #f2f2f2;
+    }
+    p{
+        text-align: left;
+    }
+    img{
+        
+    }
+    
+}
 
 
 
