@@ -13,6 +13,10 @@ body{
 nav{
     padding-top: 1rem;
 }
+a:focus, a:hover{
+    color:$red-color;
+    text-decoration: none;
+}
 .nav-center{
     text-align: center;
     display: flex;
@@ -131,10 +135,10 @@ nav{
     content: "ABOUT";
 }
 .fifth-section::before{
-    content: "CONTACT";
+    content: "MY SHOP";
 }
 .sixth-section::before{
-    content: "MY SHOP";
+    content: "CONTACT";
 }
 h2{
         font-family: $font-Josefin;
@@ -341,6 +345,7 @@ h2{
         align-items:center;
         justify-content: center;
         margin-top: 2rem;
+        order:1;
     }
     .fourth-section-photo{
         background-image: url(../img/albums.jpg);
@@ -350,31 +355,76 @@ h2{
         padding: 0;
         display: flex;
         align-items: center;
+        order:2;
     }
 }
 
 //                                    fifth section
 .fifth-section::before{
-    margin-top: 0;
+    margin-top: 25rem;
 }
 .fifth-section-row{
     margin-top: 5vw;
+    .row{
+        display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+        h2{
+            text-align: center;
+        }
+        margin-bottom: 5vw;
+    }
 }
 .fifth-section-carousel{
     flex-wrap: wrap;
+    >div{
+        padding: 15px;
+    }
     .cart{
         position: relative;
-        height: 300px;
+        height: 350px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         background-color: #f2f2f2;
     }
-    p{
-        text-align: left;
+    a{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 100%;
+        justify-content: center;
+        p{
+            font-size: 2rem;
+            color: $red-color;
+            margin: 20px 0 0 20px; 
+            line-height: 2rem;
+            text-align: left;
+            width: 100%;
+            height: 2rem;
+            
+        }
+        span{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: calc(100% - 2rem - 20px);
+        }
+    }
+    a:hover{
+            text-decoration: none;
+        img{
+            transform: scale(.9);
+        }
     }
     img{
-        
+        transform: scale(.8);
+        box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.3); 
+    }
+    .img-thumbnail{
+            max-height: 310px;
     }
     
 }
