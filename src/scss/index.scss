@@ -114,12 +114,20 @@ a:focus, a:hover{
             background-color: $red-color;
         }
 }
+#carouselExampleIndicators{
+    .carousel-control-prev-icon,.carousel-control-next-icon{
+        filter: invert(1);
+    }
+}
 .carousel-control-prev-icon{
-    background-image:url("../img/arrow.png");
+    background-image:url("../img/arrow-left.svg");
+    width: 60px;
+    height: 60px;
 }
 .carousel-control-next-icon{
-    background-image:url("../img/arrow.png");
-    transform: rotate(180deg);
+    background-image:url("../img/arrow-right.svg");
+    width: 60px;
+    height: 60px;
 }
 
 .first-section::before{
@@ -363,6 +371,9 @@ h2{
 .fifth-section::before{
     margin-top: 25rem;
 }
+#carouselExampleControls3{
+    position: relative;
+}
 .fifth-section-row{
     margin-top: 5vw;
     .row{
@@ -430,7 +441,42 @@ h2{
 }
 
 
-
+//                            sixth section
+.sixth-section-row{
+    p{
+        font-family: $font-Frank;
+        font-weight: 300;
+    }
+    margin-top: 5vw;
+    .left-center-section{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .right-red-section{
+        background-color: rgba(245, 152, 157, .8);
+        color: white;
+        >div{
+            margin: 8.333333%;
+        }
+        p{
+            text-align: left;
+            font-size: 1.6rem;
+            line-height: 2rem;
+        }
+        h4{
+           font-family: $font-Josefin;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin: 0 0 15px;
+        }
+        hr{
+            border-top: 1px solid rgba(255, 255, 255, 1);
+            margin: 40px 0;
+        }
+    }
+}
 
 
 
