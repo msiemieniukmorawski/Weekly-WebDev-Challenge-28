@@ -4,7 +4,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Weekly WebDev Challenge 28</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -21,7 +21,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="nav-center">
-                    <a class="navbar-brand hidden-md-up" href="#">SOPHIA</a>
+                    <h1 class="navbar-brand"><a class="navbar-brand hidden-md-up" href="#">SOPHIA</a></h1>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
 
@@ -34,7 +34,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">SHOP</a>
                             </li>
-                            <li class="navbar-brand nav-item hidden-sm-down"> <a class="navbar-brand" href="#">SOPHIA</a></li>
+                            <li class="navbar-brand nav-item hidden-sm-down"> <h1><a class="navbar-brand" href="#">SOPHIA</a></h1></li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">NEWS</a>
                             </li>
@@ -50,37 +50,38 @@
             </nav>
         </header>
         <div class="border-carousel">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div id="carouselimg" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active deltoid"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1" class="deltoid"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2" class="deltoid"></li>
+                    <li data-target="#carouselimg" data-slide-to="0" class="active deltoid"></li>
+                    <li data-target="#carouselimg" data-slide-to="1" class="deltoid"></li>
+                    <li data-target="#carouselimg" data-slide-to="2" class="deltoid"></li>
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item first-slide active">
                         <div class="carousel-text-wrap">
                             <h3>I take photo</h3>
                             <h4 class="red">IN THE WOODS</h4>
+                            
                         </div>
                     </div>
                     <div class="carousel-item second-slide">
                         <div class="carousel-text-wrap">
                             <h3>I take photo</h3>
-                            <h4 class="red">IN THE WOODS</h4>
+                            <h4 class="red">IN THE CITY</h4>
                         </div>
                     </div>
                     <div class="carousel-item third-slide">
                         <div class="carousel-text-wrap">
                             <h3>I take photo</h3>
-                            <h4 class="red">IN THE WOODS</h4>
+                            <h4 class="red">IN THE GARDEN</h4>
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#carouselimg" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#carouselimg" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
@@ -102,7 +103,7 @@
 
                         <img src="img/weddings.jpg" class="figure-img img-fluid mx-auto d-block">
                         <figcaption>WEDDINGS</figcaption>
-                        <div class="hover-img-effect"></div>
+                        <div class="hidden-sm hover-img-effect"></div>
                     </a>
 
                 </figure>
@@ -110,7 +111,7 @@
                     <a href="#">
                         <img src="img/events.jpg" class="figure-img img-fluid mx-auto d-block">
                         <figcaption>EVENTS</figcaption>
-                        <div class="hover-img-effect"></div>
+                        <div class="hidden-sm hover-img-effect"></div>
                     </a>
 
                 </figure>
@@ -118,7 +119,7 @@
                     <a href="#">
                         <img src="img/parties.jpg" class="figure-img img-fluid mx-auto d-block">
                         <figcaption>PARTIES</figcaption>
-                        <div class="hover-img-effect"></div>
+                        <div class="hidden-sm hover-img-effect"></div>
                     </a>
 
                 </figure>
@@ -132,7 +133,7 @@
             <div class="row second-section-row">
                 <div class="col-xl-6 txt-center">
                     <div class="second-section-txt col-xl-10">
-                        <h2>MY SERVICE</h2>
+                        <h2>MY ALMUBS</h2>
                         <p>I love photographing</p>
                         <p>a multitude of places</p>
                         <p>and subjects</p>
@@ -142,21 +143,22 @@
                     </div>
 
                 </div>
-                <a href="#" class="col-xl-6 second-section-photo">
-                    <span class="hover-img-right-effect"></span>
-                </a>
+                <div class=" col-xl-6"><a href="#" class="  second-section-photo">
+                    <span class="hidden-sm hover-img-right-effect"></span>
+                </a></div>
+                
             </div>
         </section>
         <div class="third-section section">
         </div>
         <section class="container-fluid third-section-row">
             <div class="row third-section-first-row">
-                <h2>MY THOUGHTS</h2>
+                <h2>MY Albums</h2>
                 <p>Apart from photography,</p>
                 <p>I also love to write</p>
             </div>
             <div class="row third-section-second-row">
-                <div id="carouselExampleControls2" class="carousel slide carousel-inner-center" data-ride="carousel">
+                <div id="carouselthoughts" class="carousel slide carousel-inner-center" data-ride="carousel">
                     <div class=" container" role="listbox">
                         <div class="carousel-item active third-section-carousel">
                             <div class="carousel-item-left col-md-6">
@@ -194,11 +196,11 @@
                         </div>
 
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#carouselthoughts" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carouselthoughts" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
@@ -213,21 +215,21 @@
         <div class="container-fluid fourth-section section">
         </div>
         <section class="container-fluid  fourth-section-row">
-           <div class="row">
-               <div class="col-md-6 fourth-section-photo">
+            <div class="row">
+                <div class="col-md-6 fourth-section-photo">
 
+                </div>
+                <div class="col-md-6 offset-lg-1 col-lg-5 txt-center">
+                    <h2>Sophia Mcgregor</h2>
+                    <p>Young and avid</p>
+                    <p>photographer based</p>
+                    <p>in Los Angeles</p>
+                    <a href="#">
+                        <p class="btn">MORE ABOUT ME</p>
+                    </a>
+                </div>
             </div>
-            <div class="col-md-6 offset-lg-1 col-lg-5 txt-center">
-                <h2>Sophia Mcgregor</h2>
-                <p>Young and avid</p>
-                <p>photographer based</p>
-                <p>in Los Angeles</p>
-                <a href="#">
-                    <p class="btn">MORE ABOUT ME</p>
-                </a>
-            </div>
-           </div>
-            
+
         </section>
 
         <div class="fifth-section section">
@@ -238,7 +240,7 @@
                 <p>Buy hight-quality prints</p>
                 <p>of my photos</p>
             </div>
-            <div id="carouselExampleControls3" class="carousel slide carousel-inner-center" data-ride="carousel">
+            <div id="carouselshop" class="carousel slide carousel-inner-center" data-ride="carousel">
                 <div class="container" role="listbox">
                     <div class="carousel-item active fifth-section-carousel">
 
@@ -403,11 +405,11 @@
                     </div>
 
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#carouselshop" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#carouselshop" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>

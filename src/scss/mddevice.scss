@@ -1,96 +1,155 @@
 //                          medium
-@media (min-width: 768px){
-    .nav-center{
+@media (min-width: 768px) {
+    .nav-center {
         text-align: center;
         display: flex;
         justify-content: center;
         margin: auto;
-        align-items:center;
+        align-items: center;
         margin-top: 0px;
         font-size: 1rem;
+        position: relative;
+        width: auto;
+        left: 0px;
+        background-color: none;
     }
-    .navbar-brand{
-        top:0;
+    .first-slide{
+        background-image: url("../img/Woodsmd.jpg");
+        
+    }
+    .second-slide{
+        background-image: url("../img/CITYmd.jpg");
+    }
+    .third-slide{
+        background-image: url("../img/gardenmd.jpg");
+    }
+    .navbar-brand {
+        top: 0;
         padding: 0;
     }
-    .navbar-nav{
+    .navbar-nav {
         padding: 1.5rem 1rem 0;
         top: -5px;
-        .nav-item{
-            margin:0 .75rem;
+        border: none;
+        border-radius:8px;
+        .nav-item {
+            margin: 0 .75rem;
             font-size: 1rem;
         }
     }
-    .fifth-section::before{
+    
+    .container-fluid {
+        height: auto;
+    }
+    .border-carousel {
+        top: 0;
+    }
+    .second-section-row{
+.second-section-photo{
+        background-image: url("../img/albums.jpg");
+        }
+    }
+    .fifth-section::before {
         margin-top: 25rem;
     }
-    .sixth-section-row{
-        .left-center-section{
+    .sixth-section-row {
+        .left-center-section {
             margin: 0;
             text-align: right;
-            p{
+            p {
                 text-align: right;
             }
         }
     }
-    footer{
-        .footer-first-row{
+    .sixth-section-row {
+        .right-red-section {
+            >div {
+                margin: 8.333333%;
+            }
+        }
+    }
+    footer {
+        .footer-first-row {
             padding: 120px 0 40px;
         }
-        .footer-second-row{
+        .footer-second-row {
             padding: 40px 0;
         }
-        .footer-third-row{
+        .footer-third-row {
             padding: 40px 0 120px;
         }
     }
 }
 
-
 //                          large
-@media (min-width: 992px){
-    .second-section:before{
+@media (min-width: 992px) {
+    .section::before{
+        display: block;
+    }
+        .hidden-sm{
+        display: block;
+            display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    }
+    
+    .second-section:before {
         margin-top: 8rem;
     }
-    .second-section-txt{
+    .second-section-txt {
         text-align: center;
-        padding-bottom:0rem;
+        padding-bottom: 0rem;
     }
-    .fourth-section-row{
-        p{
+    .first-section-row {
+        .hover-img-effect:hover,
+        {
+            background: rgba(245, 152, 157, .5);
+        }
+    }
+    .fourth-section-row {
+        p {
             text-align: left;
         }
-        h2{
+        h2 {
             text-align: left;
         }
-        .txt-center{
-            align-items:flex-start;
+        .txt-center {
+            align-items: flex-start;
             margin-top: 0;
             order: 2;
         }
-        .fourth-section-photo{
+        .fourth-section-photo {
             order: 1;
+            background-image: url(../img/Sophialg.jpg);
         }
     }
-    
-   
 }
+
 //                          Extra large
-@media (min-width: 1200px){
-    .second-section-row{
-        .second-section-txt{
-            text-align: right;
+@media (min-width: 1200px) {
+    .first-slide{
+        background-image: url("../img/Woodslg.jpg");
         
-            p{
+    }
+    .second-slide{
+        background-image: url("../img/CITYlg.jpg");
+    }
+    .third-slide{
+        background-image: url("../img/gardenlg.jpg");
+    }
+    
+    .second-section-row {
+        .second-section-txt {
+            text-align: right;
+            p {
                 text-align: right;
             }
         }
     }
-    .third-section-second-row{
-        .carousel-item-color{
+    .third-section-second-row {
+        .carousel-item-color {
             padding: 40px;
         }
-        
     }
-   
 }

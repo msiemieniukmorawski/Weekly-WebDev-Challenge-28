@@ -13,18 +13,42 @@ body{
 nav{
     padding-top: 1rem;
 }
+.back{
+    height: 100vh;
+}
 a:focus, a:hover{
     color:$red-color;
     text-decoration: none;
 }
+.hidden-sm{
+        display: none;
+    }
+.first-slide{
+        background-image: url("../img/Woodssx.jpg");
+        background-size: cover;
+        
+    }
+    .second-slide{
+        background-image: url("../img/CITYsx.jpg");
+            background-size: cover;
+    }
+    .third-slide{
+        background-image: url("../img/gardensx.jpg");
+            background-size: cover;
+    }
 .nav-center{
 //    text-align: center;
 //    display: flex;
 //    justify-content: center;
 //    margin: auto;
 //    align-items:center;
+        left: 15px;
+            width: 100%;
+        position: absolute;
     margin-top: 10px;
     z-index:20;
+    background-color: #252525;
+    margin-left: -15px
 }
 .navbar-inverse .navbar-nav .active>.nav-link, .navbar-inverse .navbar-nav .nav-link.active, .navbar-inverse .navbar-nav .nav-link.open, .navbar-inverse .navbar-nav .open>.nav-link{
     color: $red-color;
@@ -37,11 +61,10 @@ a:focus, a:hover{
     background-color: #252525;
 }
 .collapse.show{
-    width: 100%;
+        width: 100%;
     position: absolute;
     left: 0;
-    border-left: 1px solid #3b3b3b;
-    border-right: 1px solid #3b3b3b;
+
 }
 .nav-link{
     transition: .2s ease-in-out;
@@ -61,10 +84,13 @@ a:focus, a:hover{
 }
 .navbar-nav{
     align-items: baseline;
+    border-left: solid 1px $border-slider-color;
+    border-right: solid 1px $border-slider-color;
     padding: 0;
     background-color: $primary-color;
-    top:-20px;
+//    top:-20px;
     position: relative;
+    
     .navbar-brand{
         margin-right: 0;
         font-size: 1.5rem;
@@ -88,6 +114,7 @@ a:focus, a:hover{
     border: solid 1px $border-slider-color;
     position: relative;
     display: block;
+    top:65px;
 }
 .carousel{
     color: white;
@@ -111,6 +138,9 @@ a:focus, a:hover{
     }
     .carousel-text-wrap{
         text-align: center;
+        background-color: rgba(37, 37, 37, 0.72);
+        padding: 20px;
+        border-radius:8px;
     }
     h3{
         font-family: $font-Frank;
@@ -148,7 +178,7 @@ a:focus, a:hover{
             background-color: $red-color;
         }
 }
-#carouselExampleIndicators{
+#carouselimg{
     .carousel-control-prev-icon,.carousel-control-next-icon{
         filter: invert(1);
     }
@@ -212,7 +242,11 @@ h2{
     font-family: $font-Frank;
     color: #fff;
     font-weight: 900;
+//    font-size: 500px;
+    text-align: center;
     position: absolute;
+    text-shadow: 1px 0 6px rgba(0, 0, 0, 0.2);
+    display: none;
 }
 
 .first-section-row:first-child{
@@ -253,8 +287,8 @@ h2{
     }
     
     .hover-img-effect:hover, {
-        background: rgba(245, 152, 157,.5);
-    }
+        background: none;
+    }\
     .figure-img{
         margin-bottom: 0;
     }
@@ -294,7 +328,7 @@ h2{
         }
     }
     .second-section-photo{
-        background-image: url("../img/albums.jpg");
+        background-image: url("../img/albumsmd.jpg");
         background-size: cover;
         height: 720px;
         position: relative;
@@ -401,7 +435,7 @@ h2{
         order:1;
     }
     .fourth-section-photo{
-        background-image: url(../img/albums.jpg);
+        background-image: url(../img/Sophiamd.jpg);
         background-size: cover;
         height: 720px;
         position: relative;
@@ -416,7 +450,7 @@ h2{
 .fifth-section::before{
     margin-top: $margin-section;
 }
-#carouselExampleControls3{
+#carouselshop{
     position: relative;
 }
 .fifth-section-row{
@@ -510,7 +544,7 @@ h2{
         background-color: rgba(245, 152, 157, .8);
         color: white;
         >div{
-            margin: 8.333333%;
+            margin: 8.333333% 0;
         }
         p{
             text-align: left;
